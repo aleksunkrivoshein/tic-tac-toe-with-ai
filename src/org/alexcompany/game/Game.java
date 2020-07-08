@@ -1,9 +1,15 @@
-package org.alexcompany;
+package org.alexcompany.game;
 
-class Game {
-    static int n = 1;
+import org.alexcompany.check.Check;
+import org.alexcompany.players.AiEasy;
+import org.alexcompany.players.AiMedium;
+import org.alexcompany.players.Gamer;
+import org.alexcompany.players.User;
 
-    static void playerChoice(String player1, String player2, char[] array) {
+public class Game {
+    public static int n = 1;
+
+    public static void playerChoice(String player1, String player2, char[] array) {
         Gamer gamer1 = null;
         Gamer gamer2 = null;
         switch (player1) {

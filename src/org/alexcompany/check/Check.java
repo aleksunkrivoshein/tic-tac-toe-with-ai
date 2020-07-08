@@ -1,8 +1,8 @@
-package org.alexcompany;
+package org.alexcompany.check;
 
-class Check {
+public class Check {
 
-    static boolean emptyCells(char[] array) {
+    public static boolean emptyCells(char[] array) {
         boolean emptyCells = false;
         for (char c : array) {
             if (c == '_') {
@@ -70,7 +70,7 @@ class Check {
         return xWins;
     }
 
-    static boolean gameState(char[] array) {
+    public static boolean gameState(char[] array) {
         boolean gameState = false;
         if (Check.xWins(array)) {
             System.out.println("X wins");
@@ -87,7 +87,7 @@ class Check {
         return gameState;
     }
 
-    static int searchForTwoInArow(char[] array, char ox) {
+    public static int searchForTwoInArow(char[] array, char ox) {
 
         int[][] arrayIndex = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8,}, {0, 3, 6}, {1, 4, 7}, {2, 5, 8}, {0, 4, 8}, {6, 4, 2}};
         int index = 0;

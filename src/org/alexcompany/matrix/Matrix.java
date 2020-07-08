@@ -1,8 +1,8 @@
-package org.alexcompany;
+package org.alexcompany.matrix;
 
-class Matrix {
+public class Matrix {
 
-    static char[][] array33(char[] array) {
+    public static char[][] array33(char[] array) {
         char[][] array33 = new char[3][3];
         int k = 0;
         for (int i = 0; i < 3; i++) {

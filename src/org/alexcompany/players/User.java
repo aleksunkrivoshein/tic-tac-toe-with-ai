@@ -1,11 +1,17 @@
-package org.alexcompany;
+package org.alexcompany.players;
+
+import org.alexcompany.check.Check;
+import org.alexcompany.check.IndexDefinition;
+import org.alexcompany.game.Game;
+import org.alexcompany.matrix.Matrix;
+import org.alexcompany.print.Print;
 
 import java.util.Scanner;
 
-class User extends Gamer {
+public class User extends Gamer {
     private static Scanner scanner = new Scanner(System.in);
 
-    void Move(char[] array) {
+    public void Move(char[] array) {
         while (true) {
             if (!Check.emptyCells(array)) {
                 break;

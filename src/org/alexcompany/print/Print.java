@@ -1,8 +1,8 @@
-package org.alexcompany;
+package org.alexcompany.print;
 
-class Print {
+public class Print {
 
-    static void print(char[][] array) {
+    public static void print(char[][] array) {
         System.out.println("---------");
         for (int i = 0; i < 3; i++) {
             System.out.print("| ");

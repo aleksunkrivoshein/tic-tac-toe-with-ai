@@ -1,8 +1,8 @@
-package org.alexcompany;
+package org.alexcompany.check;
 
-class IndexDefinition {
+public class IndexDefinition {
 
-    static int indexDefinition(int a, int b) {
+    public static int indexDefinition(int a, int b) {
         int index = 10;
         switch (a) {
             case 1:

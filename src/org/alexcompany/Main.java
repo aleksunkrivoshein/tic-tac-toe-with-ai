@@ -1,5 +1,8 @@
 package org.alexcompany;
 
+import org.alexcompany.game.Game;
+import org.alexcompany.matrix.Matrix;
+
 import java.util.Scanner;
 
 public class Main {

@@ -1,12 +1,17 @@
-package org.alexcompany;
+package org.alexcompany.players;
+
+import org.alexcompany.check.Check;
+import org.alexcompany.game.Game;
+import org.alexcompany.matrix.Matrix;
+import org.alexcompany.print.Print;
 
 import java.util.Random;
 
-class AiMedium extends Gamer {
+public class AiMedium extends Gamer {
 
     static private Random random = new Random();
 
-    void Move(char[] array) {
+    public void Move(char[] array) {
         System.out.println("Making move level \"medium\"");
 
         while (true) {
